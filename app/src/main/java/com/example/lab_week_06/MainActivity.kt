@@ -37,7 +37,14 @@ class MainActivity : AppCompatActivity() {
             listOf(
                 CatModel(Gender.Male, CatBreed.BalineseJavanese, "Fred", "Silent and deadly", "https://cdn2.thecatapi.com/images/7dj.jpg"),
                 CatModel(Gender.Female, CatBreed.ExoticShorthair, "Wilma", "Cuddly assassin", "https://cdn2.thecatapi.com/images/egv.jpg"),
-                CatModel(Gender.Unknown, CatBreed.AmericanCurl, "Curious George", "Award winning investigator", "https://cdn2.thecatapi.com/images/bar.jpg")
+                CatModel(Gender.Unknown, CatBreed.AmericanCurl, "Curious George", "Award winning investigator", "https://cdn2.thecatapi.com/images/bar.jpg"),
+                CatModel(Gender.Male, CatBreed.ExoticShorthair, "Milo", "Nap champion", "https://cdn2.thecatapi.com/images/2ao.jpg"),
+                CatModel(Gender.Female, CatBreed.BalineseJavanese, "Luna", "Moonlit prowler", "https://cdn2.thecatapi.com/images/0XYvRd7oD.jpg"),
+                CatModel(Gender.Male, CatBreed.AmericanCurl, "Oscar", "Fish connoisseur", "https://cdn2.thecatapi.com/images/6qi.jpg"),
+                CatModel(Gender.Female, CatBreed.ExoticShorthair, "Bella", "Curly whiskers", "https://cdn2.thecatapi.com/images/MTY3ODIyMQ.jpg"),
+                CatModel(Gender.Male, CatBreed.BalineseJavanese, "Simba", "Small king", "https://cdn2.thecatapi.com/images/a3d.jpg"),
+                CatModel(Gender.Female, CatBreed.AmericanCurl, "Cleo", "Silent hunter", "https://cdn2.thecatapi.com/images/1rh.jpg"),
+                CatModel(Gender.Unknown, CatBreed.ExoticShorthair, "Echo", "Mysterious meower", "https://cdn2.thecatapi.com/images/34d.jpg")
             )
         )
     }
