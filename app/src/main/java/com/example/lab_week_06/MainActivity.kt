@@ -30,6 +30,9 @@ class MainActivity : AppCompatActivity() {
         recyclerView.adapter = catAdapter
         recyclerView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
 
+        val itemTouchHelper = androidx.recyclerview.widget.ItemTouchHelper(catAdapter.swipeToDeleteCallback)
+        itemTouchHelper.attachToRecyclerView(recyclerView)
+
         catAdapter.setData(
             listOf(
                 CatModel(Gender.Male, CatBreed.BalineseJavanese, "Fred", "Silent and deadly", "https://cdn2.thecatapi.com/images/7dj.jpg"),
