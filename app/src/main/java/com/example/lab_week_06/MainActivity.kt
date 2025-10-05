@@ -11,7 +11,16 @@ import com.example.lab_week_06.model.Gender
 class MainActivity : AppCompatActivity() {
     private val recyclerView: RecyclerView by lazy { findViewById(R.id.recycler_view) }
     private val catAdapter by lazy {
-        CatAdapter(layoutInflater, GlideImageLoader(this))
+        CatAdapter(layoutInflater, GlideImageLoader(this), object: CatAdapter.OnClickListener {
+            override fun onItemClick(cat: com.example.lab_week_06.model.CatModel) = showSelectionDialog(cat)
+        })
+    }
+    private fun showSelectionDialog(cat: com.example.lab_week_06.model.CatModel) {
+        androidx.appcompat.app.AlertDialog.Builder(this)
+            .setTitle("Cat Selected")
+            .setMessage("You have selected cat ${cat.name}")
+            .setPositiveButton("OK") { _, _ -> }
+            .show()
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
